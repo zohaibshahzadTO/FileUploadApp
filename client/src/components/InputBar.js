@@ -3,11 +3,13 @@ import axios from 'axios';
 
 const InputBar = () => {
 
+    const [keywords, useKeywords] = useState([]);
 
 
     const onSubmit = e => {
         e.preventDefault();
-
+        const keywordData = new FormData();
+        keywordData.append('keywords', JSON.stringify(keywords));
     
     }
 
