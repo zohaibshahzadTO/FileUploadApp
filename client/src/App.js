@@ -10,7 +10,7 @@ const App = () => (
     </h4>
 
     <FileUpload />
-
+    <InputBar />
   </div>
 );
 
